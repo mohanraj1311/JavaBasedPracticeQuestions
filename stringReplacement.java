@@ -3,6 +3,9 @@ import java.util.*;
 
 /*
 
+Question: Replace the blanks in the input sentence
+with '%20'
+
 Complexity is : O(n)
 
 we start traversing the string from the back and 
