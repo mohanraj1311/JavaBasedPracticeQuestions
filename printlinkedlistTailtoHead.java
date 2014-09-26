@@ -1,6 +1,8 @@
 /*
 
-This pgm reverses a linked list recursively.
+This pgm reverses a linked list recursively and iteratively.
+
+Iteratively : class Stack from java collections is used. The stack stores the nodes and then we pop the elements of the stack one by one.
 
 
 */
