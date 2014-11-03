@@ -38,19 +38,41 @@ class removeVowels{
 
 	}
 
+	public static String removeVowelsUsingHashMap(String input, String remove){
+
+		char[] inArray = input.toCharArray();
+		char[] vowels = remove.toCharArray();
+		int i,j = 0;
+
+		//Build hashmap
+		HashMap<Character,Integer> charHash = new HashMap<Character, Integer>();
+		for(i = 0; i < vowels.length; i++){
+			charHash.put(vowels[i], i);
+		}
+
+		for(i = 0; i < inArray.length ; ++i){
+			if(!charHash.containsKey(inArray[i]))
+				inArray[j++] = inArray[i];
+		}
+
+		return new String(inArray,0,j);
+	}
+
 
 	public static void main(String args[])throws IOException{
 
 	System.out.println("Enter the input string ");
 	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	String input = br.readLine();
-	input = input.toLowerCase();
+	//input = input.toLowerCase();
 	//System.out.println("Entered String "+input);
 
 	System.out.println("Enter the characters to be removed in string format ");
 	String remove = br.readLine();
 
-	String output = removeVowelsMethod(input, remove);
+	//String output = removeVowelsMethod(input, remove);
+
+	String output = removeVowelsUsingHashMap(input, remove);
 
 	System.out.println("After removal of vowels: "+output);
 
