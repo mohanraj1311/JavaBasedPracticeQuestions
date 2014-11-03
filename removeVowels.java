@@ -44,6 +44,7 @@ class removeVowels{
 	System.out.println("Enter the input string ");
 	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	String input = br.readLine();
+	input = input.toLowerCase();
 	//System.out.println("Entered String "+input);
 
 	System.out.println("Enter the characters to be removed in string format ");
