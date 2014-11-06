@@ -148,3 +148,22 @@ class PreOrderPostOrderIterative{
 
 	}
 }
+
+/*
+
+mohan@mohans ~/javaPgms $ java PreOrderPostOrderIterative 
+--PREORDER--
+3
+1
+2
+5
+4
+6
+--POSTORDER--
+2
+1
+4
+6
+5
+3
+*/
