@@ -3,8 +3,10 @@ This program shows the use of the 'volatile' keyword.
 Its used to stop the threads from caching the variables.
 When the variable used by one thread has to be modified by another 
 thread, this volatile comes handy.
-In the program below, the main thread changes the value of a variable which is
+In the program below, the main thread changes the value of a variable('running') which is
 being used by the thread t1 which we spawned.
+Additionally it shows using the Scanner class.
+When a return is pressed, the thread execution is stopped.
 */
 
 import java.io.*;
