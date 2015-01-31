@@ -43,10 +43,12 @@ class QueueUsingStack{
 
 	public static void main(String args[])throws IOException{
 	Queue QueueObj = new Queue();
+	int dequeuedElem = QueueObj.dequeue();
+	System.out.println("The dequeued element :"+dequeuedElem);
 	QueueObj.enqueue(1);
 	QueueObj.enqueue(2);
 	QueueObj.enqueue(3);
-	int dequeuedElem = QueueObj.dequeue();
+	
 	QueueObj.enqueue(4);
 	QueueObj.enqueue(5);
 	dequeuedElem = QueueObj.dequeue();

@@ -1,3 +1,4 @@
+// Check if the two given strings are anagrams
 import java.io.*;
 import java.util.*;
 import java.util.Arrays;
