@@ -4,7 +4,7 @@ Preorder Function begins at Line 72.
 PostOrder at Line 107
 
 It uses stack.
-Algo:
+PreOrder Algo:
 	a. Create a stack
 	b. Push the root node into the stack
 	c. While the stack is not empty
@@ -13,6 +13,23 @@ Algo:
 		print the data of the popped node
 		if it has a right child push the right child
 		if it has a left child push the left child
+		}
+PostOrder algo:
+	a. Define two stacks - stack1 and stack2.
+	b. Stack1 will be used for processing and stack2 will
+	be used to store the elements exactly in the same order as the post-order requires.
+	c. Push the root node to stack1
+	d. while the stack1 is not empty
+		{
+			peek a node and store it in curr.
+			push the peeked node to stack2
+			pop stack1
+			push the left child of peeked node to stack1 if its not null
+			push the right child of peeked node to stack1 if its not null
+		}
+	e. while the stack2 is not empty
+		{
+			pop out each element and print them.
 		}
 */
 
