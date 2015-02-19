@@ -33,9 +33,9 @@ public int binarySearch(int[] arr, int start, int end, int findElement){
 	
 }
 	public static void main(String args[])throws IOException{
-	int[] arr = {0,1,2,2,3,4,5,9};
+	int[] arr = {9,5,4,0,1,2,2,3,4};
 	BinarySearch binarySearchObj = new BinarySearch();
-	int index = binarySearchObj.binarySearch(arr, 19);
+	int index = binarySearchObj.binarySearch(arr, 9);
 	System.out.println(index);
 
 	}
