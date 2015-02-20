@@ -1,6 +1,7 @@
 /*
 Print all the combinations of a array.
 Its same as print all the subsets of an array/set.
+Also, the powerSet problem.
 */
 
 import java.io.*;
@@ -33,7 +34,7 @@ class AllSubSets{
 
 		}
 		if(sum==0){
-			System.out.print("Null Set");
+			System.out.print("{}");
 		}
 		System.out.println("");
 	}
