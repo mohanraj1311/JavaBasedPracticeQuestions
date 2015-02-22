@@ -40,7 +40,7 @@ class LongestPalindrome{
 
 	public static void main(String[] args)throws IOException{
 		LongestPalindrome obj = new LongestPalindrome();
-		String s = "1331";
+		String s = "12121";
 		String res = obj.findLongestPalindrome(s);
 		System.out.println(res);
 		//System.out.println(obj.count);
